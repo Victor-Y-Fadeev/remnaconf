@@ -4,3 +4,5 @@ redis/
 .env
 
 *.json
+
+!app-config.json
