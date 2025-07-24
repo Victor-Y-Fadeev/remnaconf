@@ -37,3 +37,14 @@ services:
       - ./app-config.json:/opt/app/frontend/assets/app-config.json
     depends_on:
       - remnawave
+
+  remnawave-cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: remnawave-cloudflared
+    restart: always
+    env_file:
+      - ./.env
+    depends_on:
+      - remnawave
+      - remnawave-subscription
+    command: tunnel run
