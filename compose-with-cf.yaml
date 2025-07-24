@@ -1,9 +1,9 @@
 name: remnawave
 
 services:
-  remnawave-postgres:
+  remnawave-db:
     image: postgres:17
-    container_name: remnawave-postgres
+    container_name: remnawave-db
     restart: always
     env_file:
       - ./.env
@@ -24,7 +24,7 @@ services:
     env_file:
       - ./.env
     depends_on:
-      - remnawave-postgres
+      - remnawave-db
       - remnawave-redis
 
   remnawave-subscription:
