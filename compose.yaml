@@ -7,8 +7,8 @@ services:
     restart: always
     env_file:
       - ./.env
-  volumes:
-    - ./db:/var/lib/postgresql/data
+    volumes:
+      - ./db:/var/lib/postgresql/data
 
   remnawave-redis:
     image: valkey/valkey:8.0.2-alpine
@@ -21,6 +21,8 @@ services:
     image: remnawave/backend:latest
     container_name: remnawave
     restart: always
+    ports:
+      - 127.0.0.1:3000:3000
     env_file:
       - ./.env
     depends_on:
@@ -31,6 +33,8 @@ services:
     image: remnawave/subscription-page:latest
     container_name: remnawave-subscription
     restart: always
+    ports:
+      - 127.0.0.1:3010:3010
     env_file:
       - ./.env
     volumes:
