@@ -1,4 +1,5 @@
 ```shell
-mkdir /opt/remnanode && cd /opt/remnanode
+mkdir -p /opt/remnanode
+cd /opt/remnanode
 docker compose up -d
 ```
