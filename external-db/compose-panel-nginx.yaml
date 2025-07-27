@@ -1,0 +1,49 @@
+name: remnawave
+
+services:
+  remnawave-redis:
+    image: valkey/valkey:8.0.2-alpine
+    container_name: remnawave-redis
+    restart: always
+    volumes:
+      - ./redis:/data
+
+  remnawave:
+    image: remnawave/backend:latest
+    container_name: remnawave
+    restart: always
+    ports:
+      - 127.0.0.1:3000:3000
+    env_file:
+      - ./.env
+    depends_on:
+      - remnawave-db
+      - remnawave-redis
+
+  remnawave-subscription:
+    image: remnawave/subscription-page:latest
+    container_name: remnawave-subscription
+    restart: always
+    ports:
+      - 127.0.0.1:3010:3010
+    env_file:
+      - ./.env
+    volumes:
+      - ./app-config.json:/opt/app/frontend/assets/app-config.json
+    depends_on:
+      - remnawave
+
+  nginx-proxy-manager:
+    image: jc21/nginx-proxy-manager:latest
+    container_name: nginx-proxy-manager
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+      - 127.0.0.1:81:81
+    volumes:
+      - ./nginx:/data
+      - ./letsencrypt:/etc/letsencrypt
+    depends_on:
+      - remnawave
+      - remnawave-subscription

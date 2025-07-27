@@ -1,0 +1,13 @@
+name: remnawave
+
+services:
+  remnawave-db:
+    image: postgres:17
+    container_name: remnawave-db
+    restart: always
+    ports:
+      - 5432:5432
+    env_file:
+      - ./.env
+    volumes:
+      - ./db:/var/lib/postgresql/data

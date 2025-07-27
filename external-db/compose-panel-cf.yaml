@@ -1,0 +1,40 @@
+name: remnawave
+
+services:
+  remnawave-redis:
+    image: valkey/valkey:8.0.2-alpine
+    container_name: remnawave-redis
+    restart: always
+    volumes:
+      - ./redis:/data
+
+  remnawave:
+    image: remnawave/backend:latest
+    container_name: remnawave
+    restart: always
+    env_file:
+      - ./.env
+    depends_on:
+      - remnawave-redis
+
+  remnawave-subscription:
+    image: remnawave/subscription-page:latest
+    container_name: remnawave-subscription
+    restart: always
+    env_file:
+      - ./.env
+    volumes:
+      - ./app-config.json:/opt/app/frontend/assets/app-config.json
+    depends_on:
+      - remnawave
+
+  remnawave-cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: remnawave-cloudflared
+    restart: always
+    env_file:
+      - ./.env
+    depends_on:
+      - remnawave
+      - remnawave-subscription
+    command: tunnel run
