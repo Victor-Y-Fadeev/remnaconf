@@ -21,6 +21,8 @@ services:
     image: remnawave/backend:latest
     container_name: remnawave
     restart: always
+    extra_hosts:
+      - host.docker.internal:host-gateway
     ports:
       - 127.0.0.1:3000:3000
     env_file:
