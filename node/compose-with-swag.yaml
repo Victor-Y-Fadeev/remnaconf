@@ -1,0 +1,33 @@
+name: remnanode
+
+services:
+  remnanode:
+    image: remnawave/node:latest
+    container_name: remnanode
+    restart: always
+    network_mode: host
+    env_file:
+      - ./.env
+
+  swag:
+    image: lscr.io/linuxserver/swag
+    container_name: swag
+    restart: always
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Moscow
+      - URL= # Top url you have control over
+      - SUBDOMAINS=node
+      - VALIDATION=http
+      - ONLY_SUBDOMAINS=true
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - 80:80
+      - 443:443
+      - 443:443/udp
+    volumes:
+      - ./swag:/config
