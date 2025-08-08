@@ -18,7 +18,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Moscow
+      - TZ=Etc/UTC
       - URL= # Top url you have control over
       - SUBDOMAINS=node
       - VALIDATION=http
