@@ -1,6 +1,22 @@
 name: remnanode
 
 services:
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  curl-cron:
+    image: jsonfry/curl-cron
+    container_name: curl-cron
+    restart: always
+    env_file:
+      - ./.env
+    volumes:
+      - ./download:/download
+
   remnanode:
     image: remnawave/node:latest
     container_name: remnanode
@@ -8,9 +24,8 @@ services:
     network_mode: host
     env_file:
       - ./.env
-  watchtower:
-    image: containrrr/watchtower
-    container_name: watchtower
-    restart: always
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - ./download/ip-v2fly.dat:/usr/local/share/xray/ip-v2fly.dat
+      - ./download/site-v2fly.dat:/usr/local/share/xray/site-v2fly.dat
+      - ./download/ip-antizapret.dat:/usr/local/share/xray/ip-antizapret.dat
+      - ./download/site-antizapret.dat:/usr/local/share/xray/site-antizapret.dat
