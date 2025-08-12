@@ -13,7 +13,8 @@ sudo ufw disable
 ```
 
 ```shell
-mkdir -p /opt/remnanode
+mkdir -p /opt/remnanode/download
 cd /opt/remnanode
+touch download/{ip,site}-{v2fly,antizapret}.dat
 docker compose up -d
 ```
