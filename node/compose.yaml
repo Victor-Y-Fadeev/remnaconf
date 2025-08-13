@@ -2,14 +2,14 @@ name: remnanode
 
 services:
   watchtower:
-    image: containrrr/watchtower
+    image: containrrr/watchtower:latest
     container_name: watchtower
     restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
   curl-cron:
-    image: jsonfry/curl-cron
+    image: jsonfry/curl-cron:latest
     container_name: curl-cron
     restart: always
     env_file:
