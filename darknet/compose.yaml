@@ -1,23 +1,6 @@
 name: darknet
 
 services:
-  i2p:
-    image: geti2p/i2p:latest
-    container_name: i2p
-    restart: always
-    environment:
-      - JVM_XMX=256m
-      - EXT_PORT=54321
-    ports:
-      - 127.0.0.1:4444:4444
-      - 127.0.0.1:4445:4445
-      - 127.0.0.1:7657:7657
-      - 54321:12345
-      - 54321:12345/udp
-    volumes:
-      - ./i2pconfig:/i2p/.i2p
-      - ./i2ptorrents:/i2psnark
-
   torproxy:
     image: dperson/torproxy:latest
     container_name: torproxy
@@ -26,3 +9,38 @@ services:
       - 127.0.0.1:8118:8118
       - 127.0.0.1:9050:9050
       - 127.0.0.1:9050:9050/udp
+
+  i2p:
+    image: geti2p/i2p:latest
+    container_name: i2p
+    restart: always
+    networks:
+      default:
+        ipv4_address: 172.20.0.20
+    ports:
+      - 127.0.0.1:4444:4444
+      - 127.0.0.1:4445:4445
+      - 172.17.0.1:7657:7657
+      - 54321:12345
+      - 54321:12345/udp
+    volumes:
+      - ./i2pconfig:/i2p/.i2p
+      - ./i2ptorrents:/i2psnark
+    # healthcheck:
+    #   test: ["CMD-SHELL", "exec 3<>/dev/tcp/127.0.0.1/7657"]
+
+  # autoheal:
+  #   image: willfarrell/autoheal:latest
+  #   container_name: autoheal
+  #   restart: always
+  #   environment:
+  #     - AUTOHEAL_CONTAINER_LABEL=all
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+          # gateway: 172.20.0.1
