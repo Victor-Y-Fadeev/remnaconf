@@ -7,6 +7,7 @@ services:
     restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    command: remnanode
 
   curl-cron:
     image: jsonfry/curl-cron:latest
