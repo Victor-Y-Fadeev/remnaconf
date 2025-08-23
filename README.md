@@ -5,17 +5,17 @@ This repository contains instructions and recommendations to setup your own VPN 
 The minimal requirement is to have the main VPS with 2 GB of RAM and a public domain name for SSL encryption. All the other VPS nodes, if you need them, can have the cheapest configuration. The guide walks you through the process from the basic steps, if you know them, just read the tips.
 
 Main content:
-1. [Choose VPS and run Docker Compose]()
+1. [Choose VPS and run Docker Compose](/docs/vps.md)
 2. [Register domain and setup Cloudflare DNS](/docs/domain.md)
-3. [Issue autorenew Let's Encrypt certificate for Nginx]()
-5. [Xray configuration for XTLS-Reality]()
-4. [Remnawave panel overview and usage]()
+3. [Issue autorenew Let's Encrypt certificate for Nginx](/docs/nginx.md)
+5. [Xray configuration for XTLS-Reality](/docs/xray.md)
+4. [Remnawave panel overview and usage](/docs/panel.md)
 
 Additional chapters:
-1. [Telegram & GitHub authentication]()
-2. [Modern XHTTP with QUIC support]()
-3. [Darknet access & DNS override]()
-4. [Let's talk about client routes and Nodes]()
+1. [Telegram & GitHub authentication](/docs/oauth.md)
+2. [Modern XHTTP with QUIC support](/docs/xhttp.md)
+3. [Darknet access & DNS override](/docs/darknet.md)
+4. [Let's talk about client routes and Nodes](/docs/routing.md)
 
 # References
 
