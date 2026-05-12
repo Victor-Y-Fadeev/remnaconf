@@ -57,6 +57,7 @@ The other good source for my research is [GPT](https://chatgpt.com/), use it if 
 
 - <img src="icons/remna.svg" width="16"/> [Remnawave: Quick Start](https://docs.rw/docs/learn/quick-start/)
 - <img src="icons/github.svg" width="16"/> [Cross-platform, unofficial CLI for Cloudflare Warp](https://github.com/ViRb3/wgcf)
+- <img src="icons/github.svg" width="16"/> [Get unlimited amount of data in Cloudflare's WARP VPN](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED)
 - <img src="icons/github.svg" width="16"/> [Setup VLESS + TCP + REALITY + VISION + uTLS](https://github.com/XTLS/Xray-core/discussions/3518)
 - <img src="icons/github.svg" width="16"/> [Unavailability of ntc.party](https://github.com/bol-van/zapret/discussions/1703)
 - <img src="icons/github.svg" width="16"/> [Creating a VPN that bypasses mobile carrier whitelists](https://github.com/kort0881/russia-whitelist/discussions/21)
