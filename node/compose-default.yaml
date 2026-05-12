@@ -1,0 +1,21 @@
+name: remnanode
+
+services:
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: watchtower
+    restart: always
+    environment:
+      - WATCHTOWER_CLEANUP=true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  remnanode:
+    image: remnawave/node:latest
+    container_name: remnanode
+    restart: always
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+    env_file:
+      - ./.env
