@@ -23,11 +23,12 @@ Here are presented all the sources that I use to investigate this theme.
 If you want to know more, read them, some of them require translation.
 The other good source for my research is [GPT](https://chatgpt.com/), use it if you misunderstand something, especially deep research mode.
 
-## Apps
+## Tools
 
 - <img src="icons/happ.png" width="16"/> [Happ](https://github.com/Happ-proxy)
 - <img src="icons/throne.png" width="16"/> [Throne](https://github.com/throneproj/Throne/releases/latest)
 - <img src="icons/sing-box.svg" width="16"/> [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/latest)
+- <img src="icons/geohide.png" width="16"/> [GeoHide](https://dns.geohide.ru:8443/)
 
 ## Docs
 
@@ -45,6 +46,7 @@ The other good source for my research is [GPT](https://chatgpt.com/), use it if 
 - <img src="icons/github.svg" width="16"/> [Lists of domain and IPs blocked in Russia in Rule Set form](https://github.com/savely-krasovsky/antizapret-sing-box)
 - <img src="icons/github.svg" width="16"/> [GeoIP database and rule sets for sing-box](https://github.com/SagerNet/sing-geoip)
 - <img src="icons/github.svg" width="16"/> [Geosite database and rule sets for sing-box](https://github.com/SagerNet/sing-geosite)
+- <img src="icons/github.svg" width="16"/> [Russia mobile internet whitelist](https://github.com/hxehex/russia-mobile-internet-whitelist)
 
 ## Support
 
@@ -55,9 +57,14 @@ The other good source for my research is [GPT](https://chatgpt.com/), use it if 
 
 - <img src="icons/remna.svg" width="16"/> [Remnawave: Quick Start](https://docs.rw/docs/learn/quick-start/)
 - <img src="icons/github.svg" width="16"/> [Setup VLESS + TCP + REALITY + VISION + uTLS](https://github.com/XTLS/Xray-core/discussions/3518)
+- <img src="icons/github.svg" width="16"/> [Недоступность ntc.party](https://github.com/bol-van/zapret/discussions/1703)
+- <img src="icons/github.svg" width="16"/> [Делаем VPN с обходом белых списков мобильной связи через VPS VK cloud и вашим VPS из любой страны](https://github.com/kort0881/russia-whitelist/discussions/21)
 - <img src="icons/ntp-party.png" width="16"/> [Is VLESS-xtls-rprx-vision-Reality blocked in Russia?](https://ntc.party/t/16061)
 - <img src="icons/habr.png" width="16"/> [3X-UI: Shadowsocks-2022 & XRay (XTLS)](https://habr.com/ru/articles/735536/)
 - <img src="icons/habr.png" width="16"/> [Proxying through CDN/Websocket/gRPC specifics](https://habr.com/ru/articles/761798/)
 - <img src="icons/habr.png" width="16"/> [FAQ of Shadowsocks/XRay/XTLS/Reality/Nekobox/etc.](https://habr.com/ru/articles/770400/)
+- <img src="icons/habr.png" width="16"/> [Как ТСПУ ловит VLESS в 2026 и почему XHTTP — следующий шаг](https://habr.com/ru/articles/1009542/)
+- <img src="icons/habr.png" width="16"/> [Из-за критической уязвимости VLESS клиентов скоро все ваши VPN будут заблокированы](https://habr.com/ru/articles/1020080/)
+- <img src="icons/habr.png" width="16"/> [Это — всё что вам надо знать о белых списках: как устроены и 6 способов обхода](https://habr.com/ru/articles/1027276/)
 
 
