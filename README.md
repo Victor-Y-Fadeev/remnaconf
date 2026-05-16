@@ -34,7 +34,7 @@ The other good source for my research is [GPT](https://chatgpt.com/), use it if 
 
 - <img src="icons/docker.ico" width="16"/> [Docker Compose: Services](https://docs.docker.com/reference/compose-file/services/)
 - <img src="icons/nginx-proxy-manager.svg" width="16"/> [Nginx Proxy Manager: Guide](https://nginxproxymanager.com/guide/)
-- <img src="icons/xray.svg" width="16"/> [Project X: Configurations](https://xtls.github.io/en/config/)
+- <img src="icons/xray.svg" width="16"/> [Project X: Configurations](https://xtls.github.io/ru/config/)
 - <img src="icons/remna.svg" width="16"/> [Remnawave: Docs](https://remna.st/docs/overview/introduction)
 - <img src="icons/happ.png" width="16"/> [Happ: Routing](https://www.happ.su/main/dev-docs/routing)
 - <img src="icons/sing-box.svg" width="16"/> [sing-box: Configuration](https://sing-box.sagernet.org/configuration/)
@@ -60,6 +60,7 @@ The other good source for my research is [GPT](https://chatgpt.com/), use it if 
 - <img src="icons/github.svg" width="16"/> [Cross-platform, unofficial CLI for Cloudflare Warp](https://github.com/ViRb3/wgcf)
 - <img src="icons/github.svg" width="16"/> [Get unlimited amount of data in Cloudflare's WARP VPN](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED)
 - <img src="icons/github.svg" width="16"/> [Setup VLESS + TCP + REALITY + VISION + uTLS](https://github.com/XTLS/Xray-core/discussions/3518)
+- <img src="icons/github.svg" width="16"/> [XHTTP: Beyond REALITY](https://github.com/XTLS/Xray-core/discussions/4113#discussioncomment-11468947)
 - <img src="icons/github.svg" width="16"/> [Unavailability of ntc.party](https://github.com/bol-van/zapret/discussions/1703)
 - <img src="icons/github.svg" width="16"/> [Creating a VPN that bypasses mobile carrier whitelists](https://github.com/kort0881/russia-whitelist/discussions/21)
 - <img src="icons/ntp-party.png" width="16"/> [Is VLESS-xtls-rprx-vision-Reality blocked in Russia?](https://ntc.party/t/16061)
