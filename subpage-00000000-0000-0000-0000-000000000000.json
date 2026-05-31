@@ -164,7 +164,7 @@
                 "en": "Choose the version for your device, click the button below and install the app.",
                 "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение."
               },
-              "svgIconColor": "cyan"
+              "svgIconColor": "violet"
             },
             {
               "title": {
@@ -248,7 +248,7 @@
                 "en": "Choose the version for your device, click the button below and install the app.",
                 "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение."
               },
-              "svgIconColor": "cyan"
+              "svgIconColor": "violet"
             },
             {
               "title": {
@@ -332,7 +332,7 @@
                 "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
                 "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает."
               },
-              "svgIconColor": "cyan"
+              "svgIconColor": "violet"
             },
             {
               "title": {
@@ -407,7 +407,7 @@
                 "en": "Open the page in the App Store on your Apple TV and install the app. Launch it, allow VPN configuration if prompted, and enter your passcode if required.",
                 "ru": "Откройте страницу в App Store на Apple TV и установите приложение. Запустите его, предоставьте разрешение на VPN-конфигурацию, если потребуется, и введите свой пароль."
               },
-              "svgIconColor": "cyan"
+              "svgIconColor": "violet"
             },
             {
               "title": {
@@ -514,7 +514,7 @@
                 "en": "Choose the version for your device, click the button below and install the app.",
                 "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение."
               },
-              "svgIconColor": "cyan"
+              "svgIconColor": "violet"
             },
             {
               "title": {
@@ -598,7 +598,7 @@
                 "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
                 "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает."
               },
-              "svgIconColor": "cyan"
+              "svgIconColor": "violet"
             },
             {
               "title": {
