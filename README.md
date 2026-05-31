@@ -58,7 +58,6 @@ The other good source for my research is [GPT](https://chatgpt.com/), use it if 
 - <img src="icons/remna.svg" width="16"/> [Remnawave: Quick Start](https://docs.rw/docs/learn/quick-start/)
 - <img src="icons/tor.png" width="16"/> [Reduced Exit Policy](https://gitlab.torproject.org/legacy/trac/-/wikis/doc/ReducedExitPolicy)
 - <img src="icons/github.svg" width="16"/> [Cross-platform, unofficial CLI for Cloudflare Warp](https://github.com/ViRb3/wgcf)
-- <img src="icons/github.svg" width="16"/> [Get unlimited amount of data in Cloudflare's WARP VPN](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED)
 - <img src="icons/github.svg" width="16"/> [Setup VLESS + TCP + REALITY + VISION + uTLS](https://github.com/XTLS/Xray-core/discussions/3518)
 - <img src="icons/github.svg" width="16"/> [XHTTP: Beyond REALITY](https://github.com/XTLS/Xray-core/discussions/4113#discussioncomment-11468947)
 - <img src="icons/github.svg" width="16"/> [Unavailability of ntc.party](https://github.com/bol-van/zapret/discussions/1703)
