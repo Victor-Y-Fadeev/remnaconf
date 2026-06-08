@@ -1,0 +1,57 @@
+{
+    "dns": {
+        "servers": [
+            {
+                "address": "fakedns",
+                "domains": [
+                    "domain:onion",
+                    "domain:i2p"
+                ]
+            },
+            {
+                "address": "https+local://opennic.i2pd.xyz/dns-query",
+                "domains": [
+                    "domain:bbs",
+                    "domain:chan",
+                    "domain:cyb",
+                    "domain:dyn",
+                    "domain:epic",
+                    "domain:geek",
+                    "domain:gopher",
+                    "domain:indy",
+                    "domain:libre",
+                    "domain:neo",
+                    "domain:null",
+                    "domain:o",
+                    "domain:oss",
+                    "domain:oz",
+                    "domain:parody",
+                    "domain:pirate",
+                    "domain:free",
+                    "domain:bazar",
+                    "domain:coin",
+                    "domain:emc",
+                    "domain:lib",
+                    "domain:fur",
+                    "domain:anon",
+                    "domain:btn",
+                    "domain:conf",
+                    "domain:index",
+                    "domain:merch",
+                    "domain:mirror",
+                    "domain:mob",
+                    "domain:screen",
+                    "domain:srv",
+                    "domain:ygg"
+                ]
+            },
+            {
+                "address": "https+local://common.dot.dns.yandex.net/dns-query",
+                "domains": [
+                    "geosite:category-ru"
+                ]
+            },
+            "https+local://cloudflare-dns.com/dns-query"
+        ]
+    }
+}
